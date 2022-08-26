@@ -11,13 +11,13 @@ public class PostmanEchoTets {
     public void shouldPostRequest(){
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Hello word")
+                .body("Hello world")
                 .when()
                 .post("/post")
 
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Hello Christina"))
+                .body("data", equalTo("Hello world"))
         ;
     }
 
